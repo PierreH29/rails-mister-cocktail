@@ -1,0 +1,40 @@
+<% if false %>
+
+<%= form_for(@cocktail) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+
+<% if @cocktail.new_record? %>
+    <%= f.submit 'Create' %>
+  <% else %>
+    <%= f.submit 'Update' %>
+  <% end %>
+<% end %>
+<% end %>
+
+<%= simple_form_for(@cocktail) do |f| %>
+  <!-- simple_form_for(@restaurant)
+  if @restaurant is new record
+    => @restaurant.class => Restaurant
+    => class.downcase + 's_path' => 'restaurants_path' -->
+
+  <%= f.input :name %>
+
+  <%= f.button :submit, class: 'btn-large' %>
+<% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
