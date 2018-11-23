@@ -3,6 +3,8 @@ class CocktailsController < ApplicationController
 
   def index
     @cocktails = Cocktail.all
+    # @cocktails = Cocktail.eager_load(doses: :ingredient).all
+    # =>  pour acclerer le chargement des elements dans la base de donnees
   end
 
   def show

@@ -10,5 +10,7 @@
 # Ingredient.create(name: "ice")
 # Ingredient.create(name: "mint leaves")
 
-Cocktail.create(name: "bazooka")
-Cocktail.create(name: "the jackson")
+# Cocktail.create(name: "bazooka")
+# Cocktail.create(name: "the jackson")
+
+Dose.create(description: "6 cl", ingredient: Ingredient.first, cocktail: Cocktail.first)

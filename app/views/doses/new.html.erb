@@ -3,6 +3,8 @@
 
 <%= simple_form_for([@cocktail, @dose]) do |f| %>
   <%= f.input :description %>
-  <%= f.association :ingredients %>
+  <%= f.association :ingredient %>
+ <!-- <%= f.input :ingredient_id, collection: @ingredients %> -->
+ <!-- # pour remplir la liste des ingredients -->
   <%= f.button :submit %>
 <% end %>
